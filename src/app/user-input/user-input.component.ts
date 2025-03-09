@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, NgModel } from '@angular/forms';
 
 @Component({
   selector: 'app-user-input',
@@ -9,7 +9,15 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './user-input.component.css',
 })
 export class UserInputComponent {
+  enteredInitialIvestment = '0';
+  enteredAnnualInvestment = '0';
+  enteredExpectedReturn = '5';
+  enteredDuration = '10';
   onSubmit() {
     console.log('Onsubmit clicked!!');
+    console.log('enteredAnnualInvestment ' + this.enteredAnnualInvestment);
+    console.log('enteredAnnualInvestment ' + this.enteredAnnualInvestment);
+    console.log('enteredExpectedReturn ' + this.enteredExpectedReturn);
+    console.log('enteredDuration ' + this.enteredDuration);
   }
 }
